@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Speaking in 2024 - English Pulse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="template/template.css">
+</head>
+<body>
+	<button class="theme-toggle" id="themeToggle">🌝</button>
+    <div class="container">
+        <header>
+            <div class="logo">ENGLISH ADVICE</div>
+        </header>
+
+        <main>
+                <div class="heart-container" id="heartContainer">
+                    <span class="heart" id="heartIcon">♡</span>
+                    <span id="likeCount">164</span>
+                </div>
+				<div class="central-emoji">
+					<div class="emoji">🚀</div>
+				</div>
+            <div class="post-title-container">
+                <h1 class="post-title">Mastering Speaking in 2024</h1>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Speaking</span>
+                <span class="tag">2024</span>
+            </div>
+
+            <div class="index">
+                <h2>Index</h2>
+                <ul>
+                    <li><a href="#introduction">🍹Introduction</a></li>
+                    <li><a href="#what-is-Speaking">🧃What is Speaking?</a></li>
+                    <li><a href="#key-features">Key Features</a></li>
+                    <li><a href="#getting-started">Getting Started</a></li>
+                    <li><a href="#advanced-techniques">Advanced Techniques</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2 id="introduction">🍹Introduction</h2>
+                <p>This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.</p>
+
+                <h2 id="what-is-Speaking">🧃What is Speaking?</h2>
+                <p>This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.This is sample text.</p>
+
+				<img src="images/post1-content1.jpg" alt="Introduction image" class="content-image">
+				<a href="https://www.amazon.com/dp/XXXXXXXXXX" class="amazon-link">Amazon</a>
+				<a href="https://www.youtube.com/watch?v=example" class="youtube-link">YouTube</a>
+				<a href="https://www.example.com" class="website-link">Website</a>
+				
+                <h2 id="conclusion">Conclusion</h2>
+                <p>日本語がここに挿入されるとどのような見た目になるのか、確認するためのサンプルテキストです。日本語がここに挿入されるとどのような見た目になるのか、確認するためのサンプルテキストです。日本語がここに挿入されるとどのような見た目になるのか、確認するためのサンプルテキストです。</p>
+            </div>
+        </main>
+    </div>
+
+	<script src="../scripts.js"></script>
+    <script>
+        const heartIcon = document.getElementById('heartIcon');
+        const likeCount = document.getElementById('likeCount');
+        let isLiked = false;
+
+        heartIcon.addEventListener('click', () => {
+            isLiked = !isLiked;
+            heartIcon.textContent = isLiked ? '♥' : '♡';
+            heartIcon.classList.toggle('active', isLiked);
+            likeCount.textContent = isLiked ? '165' : '164';
+        });
+    </script>
+</body>
+</html>

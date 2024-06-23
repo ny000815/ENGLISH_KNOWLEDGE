@@ -1,0 +1,198 @@
+:root {
+    --bg-color: #ffffff;
+    --card-bg: #f0f0f0;
+    --text-color: #333333;
+    --secondary-text: #666666;
+    --accent-color: #4a4a4a;
+    --emoji-bg: #e0e0e0;
+    --emoji-color: #ffffff;
+    --tag-bg: #333333;
+    --tag-color: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --card-bg: #2a2a2a;
+    --text-color: #e0e0e0;
+    --secondary-text: #b0b0b0;
+    --accent-color: #a0a0a0;
+    --emoji-bg: #4a4a4a;
+    --emoji-color: #333333;
+    --tag-bg: #ffffff;
+    --tag-color: #333333;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.post-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+	text-decoration: none;
+	color: inherit;
+}
+.post-card:hover {
+    background-color: var(--text-color);
+    color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	color: inherit;
+}
+.post-card:hover .post-title,
+.post-card:hover .post-meta {
+    color: var(--card-bg);
+}
+.emoji-container {
+    width: 50px;
+    height: 50px;
+    background-color: var(--emoji-bg);
+    color: var(--emoji-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.post-card:hover .emoji-container {
+    background-color: var(--emoji-color);
+    color: var(--emoji-colo);
+}
+.post-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+.post-meta {
+    font-size: 0.85em;
+    color: var(--secondary-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.tag {
+    background-color: var(--tag-bg);
+    color: var(--tag-color);
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.post-card:hover .tag {
+    background-color: var(--tag-color);
+    color: var(--tag-bg);
+}
+.tag:hover {
+    opacity: 0.8;
+}
+.likes {
+    display: flex;
+    align-items: center;
+}
+.likes::before {
+    content: '♥';
+    margin-right: 5px;
+    color: #ff6b6b;
+}
+.theme-toggle {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 1.2rem;
+}
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .logo {
+        font-size: 2em;
+    }
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+    .post-card {
+        padding: 15px;
+    }
+    .emoji-container {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    .post-title {
+        font-size: 1em;
+    }
+    .post-meta {
+        font-size: 0.8em;
+    }
+    .tag {
+        padding: 2px 4px;
+        font-size: 0.7em;
+    }
+    .theme-toggle {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
+}
