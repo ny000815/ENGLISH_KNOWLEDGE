@@ -33,12 +33,10 @@
 
             <div class="index">
                 <h2>Index</h2>
-                <ul>
                     <li><a href="#1">🔑リーディング基礎力</a></li>
                     <li><a href="#2">🔧リーディング応用力</a></li>
                     <li><a href="#3">🧎私の失敗</a></li>
                     <li><a href="#4">💻おすすめの学習リソース</a></li>
-                </ul>
             </div>
 
             <div class="content">
@@ -47,7 +45,6 @@
                     <p>TOEFL Readingの基礎は、文法力と単語力にあります。ただし、単に意味を知っているだけでは不十分です。重要なのは、文や単語を見たときに、その意味を即座にイメージできることです。</p>
                     <h3>単語学習教材</h3>
                     <p>単語学習には、以下の教材をおすすめします：</p>
-                    <ul>
                         <li>『TOEFL 3800』: 豊富な単語と例文で、基礎からしっかり学べます。</li>
 						<a href="https://www.amazon.co.jp/-/en/%E7%A5%9E%E9%83%A8-%E5%AD%9D/dp/4010944315" target="_blank">
 							<img src="images/3800.png" class="content-image">
@@ -59,51 +56,40 @@
                         <li>単語学習アプリ『英検でた準1級』: 例文が豊富で、類義語の整理にも役立ちます。</li>
 						<a href="https://apps.apple.com/jp/app/%E8%8B%B1%E6%A4%9C-%E6%BA%961%E7%B4%9A-%E3%81%A7%E3%81%9F%E5%8D%98/id1406157182" class="website-link" target="_blank">App Store</a>
 						<a href="https://play.google.com/store/apps/details?id=hihello.detatan.eiken.pre1&hl=ja" class="website-link" target="_blank">Google Play</a>
-                    </ul>
                     <p>単語を学ぶ際は、単に意味を覚えるだけでなく、その単語を使った状況をイメージすることが大切です。例えば、"strait"（海峡）なら「内海から陸と陸の間を通って海に出ているイメージ」、"aquifer"（帯水層）なら「地層の間の水の部分」というように、具体的なイメージを持つようにしましょう。</p>
                 </section>
 
                 <section id="2">
                     <h2>🔧 TOEFL Readingの応用力</h2>
                     <p>基礎力をつけた後は、応用力を磨く段階です。TOEFL Readingの応用力は、主に以下の2つから成り立ちます: </p>
-                    <ol>
                         <li><strong>先読み力</strong>：文脈から次に来る言葉を予測する能力。これにより、読解速度が向上し、問題解決のスピードアップにつながります。</li>
                         <li><strong>大意把握力</strong>：各文章が全体の中でどのような役割を持っているかを識別する能力。長文を効率的に理解するのに不可欠です。</li>
-                    </ol>
                     <p>これらの力を磨くには、TOEFL公式の過去問を解くのが最も効果的です。問題を解く際は、以下の点に注意しましょう: </p>
-                    <ul>
                         <li>時間を計って解答し、実際の試験と同じ条件で練習する。</li>
                         <li>わからなかった箇所は必ず復習し、理解を深める。</li>
                         <li>同じ問題を複数回解くことで、文章構造や出題パターンに慣れる。</li>
-                    </ul>
                 </section>
 
                 <section id="3">
                     <h2>🧎 私の失敗</h2>
                     <p>私が長期間陥っていた失敗例を紹介します：</p>
                     <p>私は、数ヶ月間Readingの点数が安定しませんでした。原因は2つありました: </p>
-                    <ol>
                         <li><strong>単語暗記の作業化</strong>：時間内にどれだけ進んだかばかりを気にして、一つ一つの概念を頭でイメージすることを怠っていました。</li>
                         <li><strong>復習の怠慢</strong>：一度に全ての問題を解き終えることに重点を置きすぎて、丁寧な復習ができていませんでした。</li>
-                    </ol>
                     <h3>改善策</h3>
-                    <ul>
                         <li>単語学習時は、Google検索を活用して具体的なイメージを持つ。</li>
                         <li>例文検索を使って、関連語彙と一緒に頭の中で整理する。</li>
                         <li>大問を一つずつに分けて解き、記憶が新鮮なうちに入念な復習を行う。</li>
-                    </ul>
                 </section>
 
 				<section id="4">
 					<h2>💻 おすすめの学習リソース</h2>
 					<p>TOEFL Reading力向上に役立つウェブサイトを紹介します：</p>
-					<ul>
 						<li>TOEFLリーディング完全対策｜正答率を上げる9つのコツと勉強法</li>
 						<a href="https://www.path-to-success.net/toefl-reading-kotsu" class="website-link" target="_blank">There is no magic</a>
 						<li>リーディング勉強法 多読編</li>
 						<a href="https://atsueigo.com/tadoku/" class="website-link" target="_blank">Atsueigo</a>
 						<li>英語リーディングの勉強におすすめなサイト13選【レベル別】</li><a href="https://atsueigo.com/reading-website/" class="website-link" target="_blank">Atsueigo</a>
-					</ul>
 					<p>これらのリソースを活用し、より効果的にTOEFL Readingの学習を進めてください。</p>
 				</section>
 				
@@ -121,7 +107,7 @@
             isLiked = !isLiked;
             heartIcon.textContent = isLiked ? '♥' : '♡';
             heartIcon.classList.toggle('active', isLiked);
-            likeCount.textContent = isLiked ? '165' : '164';
+            likeCount.textContent = isLiked ? '106' : '105';
         });
     </script>
 </body>
