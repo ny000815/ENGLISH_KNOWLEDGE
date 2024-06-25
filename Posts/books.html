@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations - ENGLISH KNOWLEDGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template/template.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">🌝</button>
+    <div class="container">
+        <header>
+            <div class="logo">ENGLISH KNOWLEDGE</div>
+        </header>
+
+        <main>
+            <div class="heart-container" id="heartContainer">
+                <span class="heart" id="heartIcon">♡</span>
+                <span id="likeCount">144</span>
+            </div>
+            <div class="central-emoji">
+                <div class="emoji">📚</div>
+            </div>
+            <div class="post-title-container">
+                <h1 class="post-title">Book Recommendations</h1>
+            </div>
+
+            <div class="tags">
+                <span class="tag">BOOK</span>
+                <span class="tag">IDEA</span>
+            </div>
+
+            <div class="index">
+                <h2>Index</h2>
+                <ul>
+                    <li><a href="#1">📘 エッセンシャル思考</a></li>
+                    <li><a href="#2">📗 最高の勉強法</a></li>
+                    <li><a href="#3">📙 Atomic Habits</a></li>
+                    <li><a href="#4">📕 超一流になるには才能か努力か</a></li>
+                    <li><a href="#5">📔 思考・論理・分析</a></li>
+                    <li><a href="#6">📒 仮説思考</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <section id="1">
+                    <h2>📘 エッセンシャル思考</h2>
+                    <p>本が苦手な人でも読みやすい本です。ゴールに必要なことが何かを考えなおしたいときに役立ちます。</p>
+                    <img src="images/esse.png" class="content-image">
+                    <a href="https://amzn.asia/d/05CBFVHw" class="amazon-link" target="_blank">Amazon</a>
+                </section>
+
+                <section id="2">
+                    <h2>📗 最高の勉強法</h2>
+                    <p>この本は、勉強効果関連のリサーチレビューに基づいて書かれており、説得力のあります。特に、アクティブリコールという勉強法は効果的です。</p>
+                    <img src="images/sai.png" class="content-image">
+                    <a href="https://amzn.asia/d/060R2nlt" class="amazon-link" target="_blank">Amazon</a>
+                    <p>関連動画：</p>
+                    <a href="https://youtu.be/DDGVsAWgdYc?feature=shared" class="youtube-link" target="_blank">YouTube</a>
+                </section>
+
+                <section id="3">
+                    <h2>📙 Atomic Habits</h2>
+                    <p>勉強が辛いと感じている方に、特におすすめです。この本では、習慣の重要性について深く掘り下げています。習慣化することで、辛いと感じていた勉強も自然と日常の一部になっていきます。</p>
+                    <img src="images/atom.png" class="content-image">
+                    <a href="https://amzn.asia/d/09jSj6Vp" class="amazon-link" target="_blank">Amazon</a>
+                    <p>関連動画：</p>
+					<a href="https://www.youtube.com/watch?v=PZ7lDrwYdZc" class="youtube-link" target="_blank">YouTube</a>
+                </section>
+
+                <section id="4">
+                    <h2>📕 超一流になるには才能か努力か</h2>
+                    <p>この本は、バイオリニストやチェスプレイヤーなど、世界トップクラスのパフォーマーたちの練習方法や取り組み方を定量的に分析し、解釈しています。勉強へのモチベーションが自然と高まります。</p>
+                    <img src="images/tal.png" class="content-image">
+                    <a href="https://amzn.asia/d/06meUv2p" class="amazon-link" target="_blank">Amazon</a>
+                </section>
+
+                <section id="5">
+                    <h2>📔 思考・論理・分析</h2>
+                    <p>ロジカルシンキングについて、わかりやすく学びたい方におすすめです。シンプルな説明と図を用いて、論理的思考のエッセンスを解説しています。この本は、勉強の戦略を立てる際や、課題を特定する際に非常に役立ちます。</p>
+                    <img src="images/logic.png" class="content-image">
+                    <a href="https://amzn.asia/d/0gEGTX12" class="amazon-link" target="_blank">Amazon</a>
+                </section>
+
+                <section id="6">
+                    <h2>📒 仮説思考</h2>
+                    <p>問題解決を効率的に行いたい方にお勧めの一冊です。仮説、つまり仮の答えを立てることで、どのように効果的に問題にアプローチできるかを説明しています。この本も、勉強の戦略を立てる際や課題を特定する際に役立ちます。</p>
+                    <img src="images/hypo.png" class="content-image">
+                    <a href="https://amzn.asia/d/0akU2Oaj" class="amazon-link" target="_blank">Amazon</a>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts.js"></script>
+    <script>
+        const heartIcon = document.getElementById('heartIcon');
+        const likeCount = document.getElementById('likeCount');
+        let isLiked = false;
+
+        heartIcon.addEventListener('click', () => {
+            isLiked = !isLiked;
+            heartIcon.textContent = isLiked ? '♥' : '♡';
+            heartIcon.classList.toggle('active', isLiked);
+            likeCount.textContent = isLiked ? '165' : '164';
+        });
+    </script>
+</body>
+</html>

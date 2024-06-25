@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Tips</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template/template.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">🌝</button>
+    <div class="container">
+        <header>
+            <div class="logo">ENGLISH KNOWLEDGE</div>
+        </header>
+
+        <main>
+            <div class="heart-container" id="heartContainer">
+                <span class="heart" id="heartIcon">♡</span>
+                <span id="likeCount">130</span>
+            </div>
+            <div class="central-emoji">
+                <div class="emoji">🎧</div>
+            </div>
+            <div class="post-title-container">
+                <h1 class="post-title">Listening Tips</h1>
+            </div>
+
+            <div class="tags">
+                <span class="tag">LISTENING</span>
+                <span class="tag">TOEFL</span>
+            </div>
+
+            <div class="index">
+                <h2>Index</h2>
+                <ul>
+                    <li><a href="#1">🦻 Listeningの基礎力</a></li>
+                    <li><a href="#2">🎯 Listeningの応用力</a></li>
+                    <li><a href="#3">📚 おすすめの学習リソース</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <section id="1">
+                    <h2>🦻 Listeningの基礎力</h2>
+                    <p>TOEFL Listeningの基礎力を築くためには、以下の要素に焦点を当てることが重要です：</p>
+                    
+                    <h3>1. 発音記号の学習</h3>
+                    <p>発音記号を理解することは、正確な発音を習得し、リスニング力を向上させる上で非常に重要です。以下の動画講座がおすすめです：</p>
+                    <ul>
+                        <li>Atsueigo 発音マスタークラス｜Pronunciation Masterclass【動画講座】</li>
+                        <a href="https://atsueigo.shop/products/pronunciation-masterclass" class="website-link" target="_blank">Atsueigo Pronunciation Masterclass</a>
+                    </ul>
+
+                    <h3>2. 音声変化の理解</h3>
+                    <p>自然な英語の発話では、音の連結、脱落、同化などの音声変化が頻繁に起こります。これらを理解し、慣れることが重要です。以下のYouTubeチャンネルの動画が参考になります：</p>
+                    <ul>
+                        <li>Rupasensei - テネット聞き取れるようになる！ロバート・パティンソンのセリフで英会話を学ぼう</li>
+                        <a href="https://youtu.be/dMGx5ajl0zw?feature=shared" class="youtube-link" target="_blank">YouTube</a>
+                        <li>Learn English with TV Series - English With Breaking Bad</li>
+                        <a href="https://youtu.be/MtTDYMhU-qA?feature=shared" class="youtube-link" target="_blank">YouTube</a>
+                    </ul>
+
+                    <h3>3. 語彙力の強化</h3>
+                    <p>TOEFLは専門分野の語彙力が必要になります。単語を勉強するときは正しく音声を発音しながら勉強するのがおすすめです。単語を聞いて即座に意味が分かるようになることが目標です。</p>
+                </section>
+
+                <section id="2">
+                    <h2>🎯 Listeningの応用力</h2>
+                    <p>基礎力をつけた後は、以下の応用力を磨くことが重要です：</p>
+                    <ol>
+                        <li><strong>予測力</strong>：話の展開を予測しながら聞く能力</li>
+                        <li><strong>推論力</strong>：明示的に述べられていない情報を推測する能力</li>
+                    </ol>
+                    <p>応用力を高めるための効果的な練習方法：</p>
+                    <ul>
+                        <li>TOEFL公式問題集のListeningセクションを時間を繰り返し解く</li>
+                        <li>アカデミックな内容のポッドキャストを聴き、要点をまとめる練習をする</li>
+                        <li>英語のニュース（Daily Brief Bilingualなど）を毎日聴く習慣をつける</li>
+                        <li>UdemyやCousera,Edxなどで自分の興味のある分野の勉強を英語で行う</li>
+                    </ul>
+                </section>
+
+                <section id="3">
+                    <h2>📚 おすすめの学習リソース</h2>
+                    <p>TOEFL Listening の学習に役立つウェブサイトを紹介します：</p>
+                    <ul>
+                        <li>ETS公式 TOEFL iBT Listening セクション概要</li>
+                        <a href="https://www.jp.ets.org/toefl/test-takers/ibt/about/content/listening.html" class="website-link" target="_blank">ETS TOEFL Listening</a>
+                        
+                        <li>There is no magic - TOEFL リスニング対策記事</li>
+                        <a href="https://www.path-to-success.net/category/toefl/toefl-study/toefl-study-listening" class="website-link" target="_blank">There is no magic TOEFL Listening Study</a>
+                        
+                        <li>Atsueigo - TOEFL リスニング対策記事</li>
+                        <a href="https://atsueigo.com/category/application/listening/" class="website-link" target="_blank">Atsueigo TOEFL Listening Preparation</a>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts.js"></script>
+    <script>
+        const heartIcon = document.getElementById('heartIcon');
+        const likeCount = document.getElementById('likeCount');
+        let isLiked = false;
+
+        heartIcon.addEventListener('click', () => {
+            isLiked = !isLiked;
+            heartIcon.textContent = isLiked ? '♥' : '♡';
+            heartIcon.classList.toggle('active', isLiked);
+            likeCount.textContent = isLiked ? '165' : '164';
+        });
+    </script>
+</body>
+</html>

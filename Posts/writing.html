@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Tips</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template/template.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">🌝</button>
+    <div class="container">
+        <header>
+            <div class="logo">ENGLISH KNOWLEDGE</div>
+        </header>
+
+        <main>
+            <div class="heart-container" id="heartContainer">
+                <span class="heart" id="heartIcon">♡</span>
+                <span id="likeCount">126</span>
+            </div>
+            <div class="central-emoji">
+                <div class="emoji">✍️</div>
+            </div>
+            <div class="post-title-container">
+                <h1 class="post-title">Writing Tips</h1>
+            </div>
+
+            <div class="tags">
+                <span class="tag">WRITING</span>
+                <span class="tag">TOEFL</span>
+            </div>
+
+            <div class="index">
+                <h2>Index</h2>
+                <ul>
+                    <li><a href="#1">📝 Writingの基礎力</a></li>
+                    <li><a href="#2">🖋️ Writingの応用力</a></li>
+                    <li><a href="#3">📚 おすすめの学習リソース</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <section id="1">
+                    <h2>📝 Writingの基礎力</h2>
+                    <p>TOEFL Writingの基礎力を築くためには、以下の要素に焦点を当てることが重要です：</p>
+                    
+                    <h3>1. 即座に英語を書く練習</h3>
+                    <p>瞬時に英語で考えを表現する能力は、TOEFL Writingセクションで高得点を取るための鍵となります。一日ワンパラグラフを書いて、生成AIや英語の先生に添削してもらうことがおすすめです。以下の書籍が参考になります：</p>
+                    <ul>
+                        <li>英文ライティングの技術---英語は「I」ではじめるな</li>
+                        <a href="https://amzn.asia/d/0abyx1mS" class="amazon-link" target="_blank">Amazon</a>
+                    </ul>
+
+                    <h3>2. 良質な例文に触れる</h3>
+                    <p>高品質な例文を学び、それらを模倣することで、自然で効果的な英語表現を身につけることができます。以下の書籍と動画がおすすめです：</p>
+                    <ul>
+                        <li>TOEFLテスト集中攻略ライティング</li>
+                        <a href="https://amzn.asia/d/0cgTjK1D" class="amazon-link" target="_blank">Amazon</a>
+                        <li>TOEFL Writing Practice: 10 Sample Questions and Answers</li>
+                        <a href="https://youtu.be/C-qoLHZmrmQ?feature=shared" class="youtube-link" target="_blank">YouTube</a>
+                    </ul>
+
+                    <h3>3. 文法と語彙の強化</h3>
+                    <p>正確な文法と豊富な語彙は、クリアで説得力のある文章を書く上で不可欠です。アカデミックな表現や接続詞を積極的に学び、使用することが重要です。</p>
+
+                    <h3>4. 構成力の向上</h3>
+                    <p>論理的で一貫性のある文章構成を学ぶことが重要です。導入、本論、結論の明確な構造を持つエッセイの書き方を練習することがおすすめです。</p>
+                </section>
+
+                <section id="2">
+                    <h2>🖋️ Writingの応用力</h2>
+                    <p>基礎力をつけた後は、以下の応用力を磨くことが重要です：</p>
+                    <ol>
+                        <li><strong>批判的思考力</strong>：与えられたトピックを多角的に分析し、独自の視点を展開する能力</li>
+                        <li><strong>統合型ライティング力</strong>：複数の情報源から得た情報を効果的に統合し、まとめる能力</li>
+                    </ol>
+                    <p>応用力を高めるための効果的な練習方法：</p>
+                    <ul>
+                        <li>TOEFL公式問題集のWritingセクションを時間を計って繰り返し解くこと</li>
+                        <li>新聞記事や学術論文を読み、その内容を要約したり、意見を述べたりする練習をすること</li>
+                        <li>友人や先生とエッセイの相互添削を行い、フィードバックを得ること</li>
+                        <li>様々なトピックについて、アウトラインを素早く作成する練習をすること</li>
+                    </ul>
+                </section>
+
+                <section id="3">
+                    <h2>📚 おすすめの学習リソース</h2>
+                    <p>TOEFL Writing の学習に役立つウェブサイトを紹介します：</p>
+                    <ul>
+                        <li>ETS公式 TOEFL iBT Writing セクション概要</li>
+                        <a href="https://www.jp.ets.org/toefl/test-takers/ibt/about/content/writing.html" class="website-link" target="_blank">ETS TOEFL Writing</a>
+                        
+                        <li>There is no magic - TOEFL ライティング対策記事</li>
+                        <a href="https://www.path-to-success.net/category/toefl/toefl-study/toefl-study-writing" class="website-link" target="_blank">There is no magic TOEFL Writing Study</a>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts.js"></script>
+    <script>
+        const heartIcon = document.getElementById('heartIcon');
+        const likeCount = document.getElementById('likeCount');
+        let isLiked = false;
+
+        heartIcon.addEventListener('click', () => {
+            isLiked = !isLiked;
+            heartIcon.textContent = isLiked ? '♥' : '♡';
+            heartIcon.classList.toggle('active', isLiked);
+            likeCount.textContent = isLiked ? '165' : '164';
+        });
+    </script>
+</body>
+</html>
