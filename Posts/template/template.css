@@ -289,4 +289,12 @@ header {
     margin-right: auto;
 }
 
+.content-youtube {
+    width: 320px;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
 
